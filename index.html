@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        
+        <h1 class="main-heading">Student Information Form</h1>
+
+        <form >
+            <table >
+                <tr>
+                    <th>Fields</th>
+                    <th>Inputs</th>
+                </tr>
+
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" required></td>
+                </tr>
+
+                <tr>
+                    <td>Birthdate</td>
+                    <td><input type="date" id="birthdate" name="birthdate" onchange="birth1()" required></td>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" id="age" name="age" max="100" min="0" required></td>
+                </tr>
+
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" id="city" name="city" onchange="updateState()" required></td>
+                </tr>
+
+                <tr>
+                    <td>State</td>
+                    <td><input type="text" id="state" name="state" required></td>
+                </tr>
+
+                <tr>
+                    <td>Marks 1</td>
+                    <td><input type="number" id="marks1"  onchange="calculatepercent()" required></td>
+                </tr>
+
+                <tr>
+                    <td>Marks 2</td>
+                    <td><input type="number" id="marks2"  onchange="calculatepercent()" required></td>
+                </tr>
+
+                <tr>
+                    <td>Marks 3</td>
+                    <td><input type="number" id="marks3"  onchange="calculatepercent()" required></td>
+                </tr>
+
+                <tr>
+                    <td>Marks 4</td>
+                    <td><input type="number" id="marks4"  onchange="calculatepercent()" required></td>
+                </tr>
+
+                <tr>
+                    <td>Marks 5</td>
+                    <td><input type="number" id="marks5"  onchange="calculatepercent()" required></td>
+                </tr>
+
+                <tr>
+                    <td>Percentage</td>
+                    <td><input type="number" id="percent" name="percent" required></td>
+                </tr>
+
+            </table>
+
+            <a href="welcome.html"><input type="submit" id="submit" value="Submit"></a>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
